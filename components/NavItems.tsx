@@ -1,5 +1,7 @@
+// Import the components
 import {Link, NavLink} from "react-router";
 import {sidebarItems} from "~/constants";
+import {cn} from "../lib/utils";
 
 const NavItems = () => {
     return (
@@ -19,7 +21,16 @@ const NavItems = () => {
                         <NavLink to={href} key={id}>
                             {/* Add callback function if link is active*/}
                             {({ isActive}:{isActive: boolean}) => (
-                            <div className={}>
+                            // Stylize the nav items from the utils ts file
+                            <div className={cn('group nav-item', {
+                                'bg-primary-100 !text-white': isActive
+                            })}>
+                                {/* Add image and stylize the icon*/}
+                                <img
+                                     src={icon}
+                                     alt={label}
+                                     /* Add callback function if link is active*/
+                                     className={`group-hover:brightness-0 size-5 group-hover:invert ${isActive ? 'brightness-0 invert' : 'text-dark-200'}`}/>
                                 {label}
                             </div>
                             )}
