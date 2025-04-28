@@ -4,6 +4,12 @@ import {sidebarItems} from "~/constants";
 import {cn} from "../lib/utils";
 
 const NavItems = () => {
+    const user = {
+        name: 'Miles',
+        email: 'mileswildmore18@gmail.com',
+        imageUrl: '/assets/images/david.webp'
+    }
+
     return (
         // Stylize the nav items
         <section className="nav-items">
@@ -37,6 +43,15 @@ const NavItems = () => {
                         </NavLink>
                     ))}
                 </nav>
+                {/* Add the footer*/}
+                <footer className="nav-footer">
+                    {/* Add the user image*/}
+                    <img src={user?.imageUrl || '/assets/images/david.webp'} alt={user?.name || 'David'}/>
+                    <article>
+                        <h2>{user?.name}</h2>
+                        <p>{user?.email}</p>
+                    </article>
+                </footer>
 
             </div>
         </section>
