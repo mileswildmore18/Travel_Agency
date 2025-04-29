@@ -6,7 +6,7 @@ import NavItems from "./NavItems";
 
 // Stylize the mobile sidebar on small screen devices
 const MobileSidebar = () => {
-    // Import from Syncfusion for sidebar
+    // Import from Syncfusion
     let sidebar: SidebarComponent
 
     // Add the toggle function on hamburger icon for Sidebar

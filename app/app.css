@@ -375,6 +375,7 @@
     @apply flex justify-center items-center gap-1 w-[65px] py-[2px]  rounded-2xl mix-blend-multiply;
   }
 
+  /* Properties for the dashboard*/
   .dashboard {
     @apply flex flex-col gap-10 w-full  pb-20;
 
