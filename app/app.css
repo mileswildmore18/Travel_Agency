@@ -299,6 +299,7 @@
       }
     }
   }
+  /*Properties for the mobile sidebar*/
   .mobile-sidebar {
     @apply lg:hidden flex flex-col gap-5;
     header {

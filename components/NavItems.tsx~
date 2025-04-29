@@ -4,7 +4,7 @@ import {sidebarItems} from "~/constants";
 import {cn} from "../lib/utils";
 
 // Add the nav items along with callback function to click the toggle button making it optional
-const NavItems = ({ handleClick }: { handleClick?: () => void}) => {
+const NavItems = ({handleClick}: { handleClick?: () => void}) => {
     const user = {
         name: 'Miles',
         email: 'mileswildmore18@gmail.com',
