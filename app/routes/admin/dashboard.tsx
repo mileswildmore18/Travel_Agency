@@ -11,7 +11,7 @@ const Dashboard = () => {
         <main className="dashboard wrapper">
             <Header
                 title={`Welcome ${user?.name ?? 'Guest'} 👋`}
-                description="Track acitvity, trends and popular destinations in real time"
+                description="Track activity, trends and popular destinations in real time"
             />
             {/* Add the stats and trip cards*/}
             <section className="flex flex-col gap-6">
@@ -38,8 +38,25 @@ const Dashboard = () => {
                     />
                 </div>
             </section>
+            <section className="container">
+                <h1 className="text-xl font-semibold text-dark-100">Created Trips</h1>
+                {/* Add trip cards*/}
+                <div className="trip-grid">
+                    {/*Add the trip cards and destructure the trip*/}
+                    {allTrips.slice(0, 4).map(({ id, name, imageUrls, itinerary, tags, estimatedPrice }) => (
+                        // Display the trip cards using the TripCard component props
+                        <TripCard
+                            key={id}
+                            id={id.toString()}
+                            name={name}
+                            imageUrl={imageUrls[0]}
+                            location={itinerary?.[0]?.location ?? ''}
+                            tags={tags}
+                            price={estimatedPrice}
+                        />))}
+                </div>
+            </section>
 
-            <TripCard/>
 
         </main>
     )
