@@ -342,6 +342,7 @@
       }
     }
   }
+  /* Properties for the header*/
   .header {
     @apply flex flex-col gap-5 md:flex-row justify-between w-full;
     article {
