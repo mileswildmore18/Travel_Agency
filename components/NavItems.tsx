@@ -12,7 +12,7 @@ const NavItems = ({ handleClick }: { handleClick?: () => void}) => {
     }
 
     return (
-        // Stylize the nav items
+        // Navigation Items
         <section className="nav-items">
             {/* Link logo to the home page*/}
             <Link to='/' className="link-logo">
@@ -23,7 +23,7 @@ const NavItems = ({ handleClick }: { handleClick?: () => void}) => {
             {/* Add the nav items on the sidebar*/}
             <div className="container">
                 <nav>
-                    {/* Add the nav items from TS file to display on sidebar*/}
+                    {/* Add the nav items from index TS file to display on sidebar*/}
                     {sidebarItems.map(({ id, href, icon, label }) => (
                         <NavLink to={href} key={id}>
                             {/* Add callback function if link is active*/}
@@ -73,6 +73,7 @@ const NavItems = ({ handleClick }: { handleClick?: () => void}) => {
 
             </div>
         </section>
+       // End of Navigation Items
     )
 }
 export default NavItems

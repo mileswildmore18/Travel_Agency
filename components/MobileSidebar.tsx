@@ -15,6 +15,7 @@ const MobileSidebar = () => {
     }
 
     return (
+        // Mobile sidebar
         <div className="mobile-sidebar wrapper">
             <header>
                 {/* Link logo to the home page*/}
@@ -47,11 +48,12 @@ const MobileSidebar = () => {
                 showBackdrop={true}
                 type="over"
             >
-            {/* Add the nav items in mobile devices*/}
-            <NavItems handleClick={toggleSidebar}/>
+                {/* Add the nav items in mobile devices*/}
+                <NavItems handleClick={toggleSidebar}/>
 
             </SidebarComponent>
         </div>
+        // End of mobile sidebar
     )
 }
 export default MobileSidebar
