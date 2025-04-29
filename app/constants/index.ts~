@@ -144,17 +144,17 @@ export const RIGHT_CONFETTI = {
 };
 
 // Add the name of the user
-export const user = {name: 'Miles'};
+const user = {name: 'Miles'};
 
 // Add the dashboard stats
-export const dashboardStats = {
+const dashboardStats = {
   totalUsers: 12450,
   usersJoined: {currentMonth: 218, lastMonth: 176},
   totalTrips: 3210,
   tripsCreated: {currentMonth: 150, lastMonth: 250},
   userRole: {total: 62, currentMonth: 25, lastMonth: 15},
 }
-export const allTrips = [
+const allTrips = [
   {
     id: 1,
     name: "Tropical Rewind",
@@ -192,7 +192,7 @@ export const allTrips = [
     estimatedPrice: "$4,000",
   },
 ];
-export const users = [
+const users = [
   {
     id: 1,
     name: "John Doe",
