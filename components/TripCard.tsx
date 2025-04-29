@@ -32,6 +32,7 @@ const TripCard = ({id, name, location, imageUrl, tags, price}: TripCardProps) =>
 
             {/* Add the tags from syncfusion for each location selected*/}
             <div className="mt-5 pl-[18px] pr-3.5 pb-5">
+                {/*Add the tag lists*/}
                 <ChipListComponent id="travel-chip">
                     <ChipsDirective>
                         {tags.map((tag, index) => (
