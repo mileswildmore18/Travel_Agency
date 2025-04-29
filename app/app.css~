@@ -259,7 +259,6 @@
       }
     }
   }
-  /* Properties for the trip card*/
   .trip-card {
     @apply shadow-300 bg-white rounded-[20px] flex-col w-full relative;
     img {
