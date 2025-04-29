@@ -74,6 +74,7 @@ declare interface Trip {
   payment_link: string;
 }
 
+// TripCard interface with destructuring
 declare interface TripCardProps {
   id: string;
   name: string;
@@ -83,6 +84,7 @@ declare interface TripCardProps {
   price: string;
 }
 
+// StatsCard interface with destructuring
 declare interface StatsCard {
   headerTitle: string;
   total: number;
